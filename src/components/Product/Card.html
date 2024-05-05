@@ -1,0 +1,15 @@
+<div class="xl:space-y-5 space-y-2.5 xl:mx-0 mx-auto">
+  <picture>
+    <source srcset="{=$img}" media="(min-width: 1371px)" />
+    <source srcset="{=$imgMobile}" media="(max-width: 1370px)" />
+    <img src="{=$img}" alt="{=$title}" />
+  </picture>
+
+  <div class="xl:space-y-[5px] space-y-1">
+    <p class="text-primary xl:leading-[28.6px] leading-[26px] xl:text-[22px] text-[20px] font-medium">
+      {=$title}
+    </p>
+
+    <p class="xl:text-lg text-base xl:leading-[23.4px] leading-[20.8px] text-secondary">{=$desc}</p>
+  </div>
+</div>

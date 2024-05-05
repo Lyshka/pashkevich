@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply font-Montserrat scroll-smooth;
+  }
+
+  button,
+  a {
+    @apply transition-all duration-500;
+  }
+
+  a {
+    @apply hover:opacity-75;
+  }
+
+  h1 {
+    @apply xl:leading-[60px] leading-[28.8px] font-bold xl:text-[50px] text-2xl;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply xl:leading-[52px] leading-[28.6px] xl:text-[40px] text-[22px] font-bold;
+  }
+}
+
+@layer components {
+  .btn-main {
+    @apply bg-primary hover:bg-primary-100 xl:w-[260px] w-60 xl:h-[50px] h-10 flex justify-center items-center text-white text-center font-medium xl:text-base text-sm xl:leading-[19.5px] leading-[17.07px] rounded-primary;
+  }
+
+  .footer-address {
+    @apply font-medium;
+  }
+
+  .footer-address span {
+    @apply font-light;
+  }
+}
+
+@layer utilities {
+  .container-main {
+    @apply xl:max-w-[1370px] w-full xl:px-0 px-2.5 mx-auto;
+  }
+}
